@@ -8,6 +8,7 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
+import static java.lang.System.in;
 
 class Animal{
     void walk()
@@ -30,7 +31,7 @@ class Bird extends Animal
 public class JavaInheritanceI {
 
     public static void main(String args[]){
-
+        BufferedReader br=new BufferedReader(new InputStreamReader(in));
         Bird bird = new Bird();
         bird.walk();
         bird.fly();
